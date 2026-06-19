@@ -1,8 +1,5 @@
 [phases.install]
-cmds = ["npm install"]
-
-[phases.build]
-cmds = ["npm run build"]
+cmds = ["npm install --production --no-fund --no-audit"]
 
 [start]
 cmd = "node dist/index.js"
