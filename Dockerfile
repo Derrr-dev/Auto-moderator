@@ -6,7 +6,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install ALL dependencies (including devDeps for TypeScript)
-RUN npm ci --no-fund --no-audit
+RUN npm install --no-fund --no-audit
 
 # Copy source code
 COPY . .
