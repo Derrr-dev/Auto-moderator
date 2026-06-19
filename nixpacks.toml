@@ -2,10 +2,10 @@
 nixPkgs = ["nodejs_20"]
 
 [phases.install]
-cmds = ["npm ci --omit=dev --no-fund --no-audit"]
+cmds = ["npm ci --no-fund --no-audit"]
 
 [phases.build]
-cmds = ["echo \"Using pre-built dist\""]
+cmds = ["npm run build"]
 
 [start]
 cmd = "node dist/index.js"
